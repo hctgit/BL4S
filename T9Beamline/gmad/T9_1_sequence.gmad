@@ -1,0 +1,7 @@
+! Tue, 29 Nov 2016 08:48:48 +0000
+! pybdsim.Builder Lattice 
+! LATTICE SEQUENCE DEFINITION
+
+l0: line = (DR1, QD1, DR2, QF2, DR3, t1, BM1, t2, DR4, DR5, DR6, DR7, DR8, DR9, DR10, DR11, DR12, DR13, DR14, QF3, DR15, DR16, t3, BM2, t4, DR17, DR18, QF4, DR19, DR20, DR21, t5, BM3, t6, DR22, QD5, DR23, DR24, DR25, t7, BM4, t8, DR26, DR27, DR28, DR29, DR30, DR31, DR32, DR33);
+lattice: line = (l0);
+use, period=lattice;

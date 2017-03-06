@@ -1,0 +1,5 @@
+Debug						0
+InputFilePath					./output_event.root
+OutputFileName					./optics.root
+CalculateOpticalFunctions			1
+CalculateOpticalFunctionsFileName		./optics.dat

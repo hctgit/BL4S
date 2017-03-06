@@ -1,0 +1,5 @@
+Debug					1
+InputFilePath				./
+OutputFileName				./output.root
+CalculateOpticalFunctions		0
+CalculateOpticalFunctionsFileName	./output.dat

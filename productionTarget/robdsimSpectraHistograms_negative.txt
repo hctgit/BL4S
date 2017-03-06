@@ -1,0 +1,33 @@
+Debug					1
+InputFilePath				./output_event.root
+OutputFileName				./output.root
+CalculateOpticalFunctions		0
+CalculateOpticalFunctionsFileName	./output.dat
+# Object       treeName       Histogram Name         # Bins  Binning        variable selection
+Histogram	mark1	"all"			{2200}	{0:26}		E	1.0
+Histogram	mark1	"all_x"			{100}	{-3:3}		x	1.0
+Histogram	mark1	"all_xp"		{100}	{-1.2:1.2}	xp	1.0
+Histogram	mark1	"all_y"			{100}	{-3:3}		y	1.0
+Histogram	mark1	"all_yp"		{100}	{-1.2:1.2}	yp	1.0
+Histogram	mark1	"electrons"		{2200}	{0:26}		E	partID==-11
+Histogram       mark1   "electrons"             {100}   {-1.2:1.2}  	xp      partID==-11
+Histogram	mark1	"positrons"		{2200}	{0:26}		E	partID==11
+Histogram	mark1	"gamma"			{2200}	{0:26}		E	partID==22
+Histogram	mark1	"primaryProtons"	{2200}	{0:26}		E	partID==2212&&parentID==0
+Histogram	mark1	"primary_x"		{100}	{-3:3}		x	partID==2212&&parentID==0
+Histogram	mark1	"primary_xp"		{200}	{-0.00003:0.00003}	xp	partID==2212&&parentID==0
+Histogram	mark1	"primary_y"		{100}	{-3:3}		y	partID==2212&&parentID==0
+Histogram	mark1	"primary_yp"		{200}	{-0.0003:0.0003}	yp	partID==2212&&parentID==0
+Histogram	mark1	"secondaryProtonsPM"	{2200}	{0:26}		E	abs(partID)==2212&&parentID!=0
+Histogram	mark1	"secondary_x"		{100}	{-3:3}		x	abs(partID)==2212&&parentID!=0
+Histogram	mark1	"secondary_xp"		{100}	{-1.2:1.2}	xp	abs(partID)==2212&&parentID!=0
+Histogram	mark1	"secondary_y"		{100}	{-3:3}		y	abs(partID)==2212&&parentID!=0
+Histogram	mark1	"secondary_yp"		{100}	{-1.2:1.2}	yp	abs(partID)==2212&&parentID!=0
+Histogram	mark1	"neutrons"		{2200}	{0:26}		E	partID==2112
+Histogram	mark1	"muonsPM"		{2200}	{0:26}		E	abs(partID)==13
+Histogram	mark1	"pions0PM"		{2200}	{0:26}		E	partID==111||abs(partID)==211
+Histogram	mark1	"kaons"			{2200}	{0:26}		E	partID==130||partID==310||partID==311||abs(partID)==321
+Histogram	mark1	"lambda"		{2200}	{0:26}		E	partID==3122
+Histogram	mark1	"sigma"			{2200}	{0:26}		E	partID==3222||partID==3212||partID==3112
+Histogram	mark1	"xi"			{2200}	{0:26}		E	abs(partID)==3322||abs(partID)==3312||partID==3324||partID==3314
+Histogram	mark1	"omega"			{2200}	{0:26}		E	abs(partID)==3334

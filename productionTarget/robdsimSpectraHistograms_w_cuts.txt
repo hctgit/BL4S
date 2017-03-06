@@ -1,0 +1,11 @@
+Debug						0
+InputFilePath					./output_event.root
+OutputFileName					./ana_1.root
+CalculateOpticalFunctions			0
+CalculateOpticalFunctionsFileName		./ana_1.dat
+# Object	treeName	Histogram Name           # Bins     Binning	       Variable                 Selection
+Histogram      Event.	      Primaryx                 {100}       {-0.01:0.01}        Primary.x                       1
+Histogram      Event.	      Primaryy                 {100}       {-0.01:0.01}        Primary.y                       1
+Histogram      Event.	      PrimaryE                 {100}       {0.0:30.}           Primary.energy                  1.
+Histogram      Event.         EventDuration            {200}       {0:10}              Info.duration                   1
+Histogram      Event.         ProtonsEPrimary          {100}       {0.:30.}            mark1.energy                    mark1.partID==2212&&mark1.parentID==0

@@ -1,0 +1,48 @@
+Debug					1
+InputFilePath				./output_event.root
+OutputFileName				./output.root
+CalculateOpticalFunctions		0
+CalculateOpticalFunctionsFileName	./output.dat
+# Object       treeName       Histogram Name         # Bins  Binning        variable selection
+Histogram	mark1	"all"			{2600}	{0:26}		E	1.0
+Histogram	mark1	"all_x"			{100}	{-3:3}		x	1.0
+Histogram	mark1	"all_xp"		{100}	{-1.2:1.2}	xp	1.0
+Histogram	mark1	"all_y"			{100}	{-3:3}		y	1.0
+Histogram	mark1	"all_yp"		{100}	{-1.2:1.2}	yp	1.0
+
+Histogram	mark1	"primaryProtons"	{2600}	{0:26}		E	partID==2212&&parentID==0&&abs(xp)<0.01
+Histogram	mark1	"primary_x"		{100}	{-3:3}		x	partID==2212&&parentID==0
+Histogram	mark1	"primary_xp"		{200}	{-1.2:1.2}	xp	partID==2212&&parentID==0
+Histogram	mark1	"primary_y"		{100}	{-3:3}		y	partID==2212&&parentID==0
+Histogram	mark1	"primary_yp"		{200}	{-1.2:1.2}	yp	partID==2212&&parentID==0
+
+Histogram	mark1	"secondaryProtonsPM"	{2600}	{0:26}		E	partID==2212&&parentID!=0
+Histogram	mark1	"secondary_x"		{100}	{-3:3}		x	partID==2212&&parentID!=0
+Histogram	mark1	"secondary_xp"		{100}	{-1.2:1.2}	xp	partID==2212&&parentID!=0
+Histogram	mark1	"secondary_y"		{100}	{-3:3}		y	partID==2212&&parentID!=0
+Histogram	mark1	"secondary_yp"		{100}	{-1.2:1.2}	yp	partID==2212&&parentID!=0
+
+Histogram	mark1	"positrons"		{2600}	{0:26}		E	partID==11
+Histogram	mark1	"positrons_x"		{100}	{-3:3}		x	partID==11
+Histogram	mark1	"positrons_xp"		{100}	{-1.2:1.2}	xp	partID==11
+Histogram	mark1	"positrons_y"		{100}	{-3:3}		y	partID==11
+Histogram	mark1	"positrons_yp"		{100}	{-1.2:1.2}	yp	partID==11
+
+Histogram	mark1	"muonsPM"		{2600}	{0:26}		E	partID==13
+Histogram	mark1	"muons_x"		{100}	{-3:3}		x	partID==13
+Histogram	mark1	"muons_xp"		{100}	{-1.2:1.2}	xp	partID==13
+Histogram	mark1	"muons_y"		{100}	{-3:3}		y	partID==13
+Histogram	mark1	"muons_yp"		{100}	{-1.2:1.2}	yp	partID==13
+
+Histogram	mark1	"pions0PM"		{2600}	{0:26}		E	partID==211
+Histogram	mark1	"pions_x"		{100}	{-3:3}		x	partID==211
+Histogram	mark1	"pions_xp"		{100}	{-1.2:1.2}	xp	partID==211
+Histogram	mark1	"pions_y"		{100}	{-3:3}		y	partID==211
+Histogram	mark1	"pions_yp"		{100}	{-1.2:1.2}	yp	partID==211
+
+Histogram	mark1	"kaons"			{2600}	{0:26}		E	partID==321
+Histogram	mark1	"kaons_x"		{100}	{-3:3}		x	partID==321
+Histogram	mark1	"kaons_xp"		{100}	{-1.2:1.2}	xp	partID==321
+Histogram	mark1	"kaons_y"		{100}	{-3:3}		y	partID==321
+Histogram	mark1	"kaons_yp"		{100}	{-1.2:1.2}	yp	partID==321
+

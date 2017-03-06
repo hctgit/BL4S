@@ -1,0 +1,35 @@
+DR0: drift, l=1.0;
+DR1: drift, l=10.0;! apertureType=circularvacuum;
+
+blockBe: rcol, l=200.*mm, material="berillium", xsize=0.*mm, ysize=0.*mm, outerDiameter=10.*mm;
+blockAl200mm: rcol, l=200.*mm, material="aluminium", xsize=0.*mm, ysize=0.*mm, outerDiameter=10.*mm;
+blockAl100mm: rcol, l=100.*mm, material="aluminium", xsize=0.*mm, ysize=0.*mm, outerDiameter=10.*mm;
+blockAl20mm: rcol, l=20.*mm, material="aluminium", xsize=0.*mm, ysize=0.*mm, outerDiameter=10.*mm;
+blockW: rcol, l=3.*mm, material="tungsten", xsize=0.*mm, ysize=0.*mm, outerDiameter=10.*mm;
+
+mark1: marker;
+
+target1: line = (blockBe,blockW);
+target2: line = (blockAl100mm,blockW);
+target3: line = (blockAl200mm);
+target4: line = ();
+target5: line = (blockAl20mm);
+
+l0: line = (DR0, target3, DR1,mark1);
+lattice: line = (l0);
+use, period=lattice;
+
+beam,	particle="proton", 
+	energy=24.*GeV, 
+	distrType="reference";
+
+option,	physicsList="em hadronic muon",
+	!includeFringeFields=0,
+	tunnelRadius=10*m, 
+	beampipeRadius=50*cm, 
+	samplerDiameter=10*m, 
+	beampipeThickness=5*mm, 
+	outerDiameter=1.5*m,
+	ngenerate=60000;
+
+sample, range=mark1;

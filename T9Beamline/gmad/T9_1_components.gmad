@@ -1,0 +1,60 @@
+! Tue, 29 Nov 2016 08:48:48 +0000
+! pybdsim.Builder Lattice 
+! COMPONENT DEFINITION
+
+DR1: drift, l=4.31;
+QD1: quadrupole, k1=-0.7663, l=0.78;
+DR2: drift, l=0.49;
+QF2: quadrupole, k1=0.4316, l=1.24;
+DR3: drift, l=1.38;
+t1: transform3d, psi=-0.314159265359;
+BM1: sbend, angle=0.072, fintx=0, l=2.6, fint=0, e1=0.036, e2=0.036;
+t2: transform3d, psi=0.314159265359;
+DR4: drift, l=0.43;
+DR5: drift, l=0.68;
+DR6: drift, l=1.621;
+DR7: drift, l=0.68;
+DR8: drift, l=0.34;
+DR9: drift, l=0.207;
+DR10: drift, l=0.17;
+DR11: drift, l=0.9;
+DR12: drift, l=0.09;
+DR13: drift, l=0.126;
+DR14: drift, l=0.12;
+QF3: quadrupole, k1=0.3604, l=0.84;
+DR15: drift, l=0.12;
+DR16: drift, l=0.719;
+t3: transform3d, psi=-0.314159265359;
+BM2: sbend, angle=0.0611, fintx=0, l=2.6, fint=0, e1=0.0306, e2=0.0306;
+t4: transform3d, psi=0.314159265359;
+DR17: drift, l=1.193;
+DR18: drift, l=4.225;
+QF4: quadrupole, k1=0.1905, l=1.24;
+DR19: drift, l=0.36;
+DR20: drift, l=0.58;
+DR21: drift, l=0.48;
+t5: transform3d, psi=-0.314159265359;
+BM3: sbend, angle=0.0611, fintx=0, l=2.6, fint=0, e1=0.0306, e2=0.0306;
+t6: transform3d, psi=0.314159265359;
+DR22: drift, l=0.6;
+QD5: quadrupole, k1=-0.3276, l=1.24;
+DR23: drift, l=2.998;
+DR24: drift, l=0.202;
+DR25: drift, l=2.38;
+t7: transform3d, psi=-1.57658732925;
+BM4: sbend, angle=0.0294, fintx=0, l=1.18, fint=0, e1=0.0147, e2=0.0147;
+t8: transform3d, psi=0.157079632679;
+DR26: drift, l=3.33;
+DR27: drift, l=0.44;
+DR28: drift, l=0.82;
+DR29: drift, l=2.03;
+DR30: drift, l=3.0;
+DR31: drift, l=0.555;
+DR32: drift, l=1.393;
+DR33: drift, l=0.404;
+
+
+
+
+
+

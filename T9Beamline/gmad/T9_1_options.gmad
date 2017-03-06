@@ -1,0 +1,13 @@
+! Tue, 29 Nov 2016 08:48:48 +0000
+! pybdsim.Builder 
+! OPTIONS DEFINITION 
+
+option,	physicsList="em",
+	!includeFringeFields=0,
+	stopTracks=1, 
+	stopSecondaries=1,
+	tunnelRadius=1*m, 
+	beampipeRadius=20*cm, 
+	samplerDiameter=1*m, 
+	beampipeThickness=5*mm, 
+	outerDiameter=0.5*m;

@@ -1,0 +1,10 @@
+! Tue, 29 Nov 2016 08:48:48 +0000
+! pybdsim.Builder Lattice 
+! number of elements = 50
+! total length       = 51.693 m
+
+include T9_1_components.gmad;
+include T9_1_sequence.gmad;
+include T9_1_beam.gmad;
+include T9_1_options.gmad;
+sample, all;

@@ -1,0 +1,12 @@
+Debug					1
+InputFilePath				./output_event.root
+OutputFileName				./output.root
+CalculateOpticalFunctions		0
+CalculateOpticalFunctionsFileName	./output.dat
+# Object       treeName       Histogram Name         # Bins  Binning        variable selection
+Histogram	mark1	"muonsPM"		{2200}	{0:26}		E	abs(partID)==13
+Histogram	mark1	"pions0PM"		{2200}	{0:26}		E	partID==111||abs(partID)==211
+Histogram	mark1	"muonsPM_x"		{100}	{-6:6}		x	abs(partID)==13
+Histogram	mark1	"muonsPM_xp"		{100}	{-1.2:1.2}	xp	abs(partID)==13
+Histogram	mark1	"muonsPM_y"		{100}	{-6:6}		y	abs(partID)==13
+Histogram	mark1	"muonsPM_yp"		{100}	{-1.2:1.2}	yp	abs(partID)==13
